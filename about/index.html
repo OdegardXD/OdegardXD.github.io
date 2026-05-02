@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Ødegård - Personal information and background.">
+  <title>About Me | Ødegård</title>
+  <link rel="stylesheet" href="../.assets/css/style.css">
+</head>
+
+<body>
+  <div class="background-container">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+  </div>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-brand">
+        <a href="../">Ødegård</a>
+      </div>
+      <div class="navbar-links">
+        <a href="../">Home</a>
+        <a href="./" class="active">About Me</a>
+        <a href="../socials/">Socials</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-middle">
+    <div class="content-box">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm <strong>Ode</strong> (or <strong>Odegard</strong>), a 17-year-old developer from Norway 🇳🇴. I'm
+        currently a <strong>VG2 IT student</strong>, honing my skills in the world of technology.
+      </p>
+
+      <h3>🚀 Tech & Coding</h3>
+      <p>
+        My heart belongs to <strong>C#</strong> and the <strong>.NET framework</strong>. It's my favorite language, and
+        I spend a lot of my time in Visual Studio building applications with WinForms. I'm also a big fan of
+        "vibecoding" with Google Antigravity when I'm feeling a bit lazy! 😉
+      </p>
+      <p>
+        I'm also passionate about <strong>Homelabbing</strong>. I've experimented with <strong>ZimaOS</strong> and
+        <strong>CasaOS</strong> multiple times, turning my hardware into a personal cloud playground.
+      </p>
+
+      <h3>🎮 Gaming & Music</h3>
+      <p>
+        When I'm not coding, you'll probably find me on my PC. I like to game generally everything, but I mostly enjoy <strong>FPS games</strong>, especially <strong>Counter-Strike</strong>. I also enjoy teaming up with friends for some cooperative gaming.
+      </p>
+      <p>
+        Music is my lifeblood. I'm deep into <strong>Rock</strong>, <strong>Metal</strong>, and <strong>Nu Metal</strong>. Whether I'm working on a project or just relaxing, there's always a heavy riff playing in the background.
+      </p>
+
+      <h3>🛠️ Projects</h3>
+      <p>
+        I love bringing ideas to life. Some of my recent work includes:
+      </p>
+      <ul>
+        <li><strong>Spotify Audio Controller</strong>: A C# project that uses global hotkeys for seamless playback
+          control.</li>
+        <li><strong>Flutter Clicker</strong>: A mobile clicking game I started developing in May 2026.</li>
+        <li><strong>This Website</strong>: My personal corner of the web that I'm constantly refining!</li>
+      </ul>
+
+      <p style="margin-top: 24px; font-style: italic; opacity: 0.8;">
+        I know this website is hella vibecoded but i dont care. Most things nowadays are vibecoded anyway
+      </p>
+    </div>
+  </div>
+
+  <button id="scrollToTopBtn" title="Go to top">&#8679;</button>
+  <script>
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+        scrollBtn.classList.add("show");
+      } else {
+        scrollBtn.style.display = "none";
+        scrollBtn.classList.remove("show");
+      }
+    };
+    scrollBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+
+</html>
