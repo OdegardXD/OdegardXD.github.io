@@ -522,42 +522,79 @@ footer a:hover {
 }
 
 /* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .content-box {
+    padding: 30px;
+    width: 85%;
+  }
+  .main-middle {
+    padding-top: 100px;
+  }
+}
+
 @media (max-width: 600px) {
   .navbar {
-    top: 8px;
-    width: 95%;
+    top: 12px;
+    width: 92%;
     min-width: 0;
   }
   .navbar-inner {
-    gap: 4px;
-    padding: 6px 8px;
-    font-size: 0.85em;
+    gap: 8px;
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
+  .navbar-brand {
+    display: none;
   }
   .navbar-links a {
-    padding: 6px 8px;
+    padding: 6px 10px;
   }
   .main-middle h1 {
-    font-size: 2.2em;
+    font-size: 2em;
+    padding: 0 16px;
+  }
+  .main-middle h2, .main-middle h3 {
+    font-size: 1.05em;
+    padding: 0 20px;
+  }
+  .content-box {
+    padding: 24px 20px;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .content-box h2 {
+    font-size: 1.6em;
+  }
+  .content-box p {
+    font-size: 1.05em;
   }
   .circular_image {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
   }
   .social-links {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    padding: 16px;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 16px 20px;
   }
   .social-links a {
-    height: 130px;
-    padding: 12px;
+    height: 120px;
+    padding: 16px;
   }
   .social-links a svg {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
   }
   .social-links a h3 {
-    font-size: 0.95em;
+    font-size: 1.1em;
+  }
+  #scrollToTopBtn {
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    font-size: 1.2em;
   }
 }
 
