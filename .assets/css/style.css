@@ -466,6 +466,9 @@ img {
 
 /* ====== Status Iframe ====== */
 .iframe-wrapper {
+  position: relative;
+  width: 100%;
+  height: 800px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   background: transparent;
@@ -473,17 +476,34 @@ img {
 }
 
 .status-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 800px;
+  height: 100%;
   border: none;
   display: block;
-  opacity: 0.85; /* Makes it seethrough/glassy */
-  transition: filter 0.4s ease, opacity 0.4s ease;
+  transition: opacity 0.5s ease;
 }
 
-body.light-theme .status-iframe {
-  opacity: 0.85; /* Maintain seethrough look */
-  color-scheme: light; /* Forces prefers-color-scheme to light in modern browsers, if Uptime Kuma is set to Auto theme */
+.dark-iframe {
+  opacity: 0.85;
+  pointer-events: auto;
+}
+
+.light-iframe {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.light-theme .dark-iframe {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.light-theme .light-iframe {
+  opacity: 0.85;
+  pointer-events: auto;
 }
 
 /* ====== Footer ====== */

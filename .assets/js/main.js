@@ -10,12 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
             themeToggleBtn.innerHTML = "🌙"; // Show moon icon if light mode is active
             themeToggleBtn.setAttribute('aria-label', 'Switch to dark mode');
         }
-        
-        // Ensure iframe matches saved theme on load
-        const statusIframe = document.querySelector('.status-iframe');
-        if (statusIframe) {
-            statusIframe.src = "https://status.odegardxd.com/status/mystatus-light";
-        }
     }
 
     if (themeToggleBtn) {
@@ -30,16 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 themeToggleBtn.innerHTML = "☀️"; // Sun icon for dark mode
                 themeToggleBtn.setAttribute('aria-label', 'Switch to light mode');
-            }
-            
-            // Toggle iframe if it exists
-            const statusIframe = document.querySelector('.status-iframe');
-            if (statusIframe) {
-                if (theme === "light") {
-                    statusIframe.src = "https://status.odegardxd.com/status/mystatus-light";
-                } else {
-                    statusIframe.src = "https://status.odegardxd.com/status/mystatus";
-                }
             }
             
             localStorage.setItem("theme", theme);
