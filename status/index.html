@@ -41,7 +41,7 @@
     <h1>Service Status</h1>
     <h2>Current uptime and status of my hosted services.</h2>
 
-    <div class="status-container" style="width: 100%; max-width: 800px; padding: 20px;">
+    <div class="status-container" style="width: 100%; max-width: 800px; padding: 20px; box-sizing: border-box;">
       <!-- 
             Hi! To get your own Uptime Kuma status page showing here:
             1. Go to your CasaOS dashboard.
@@ -51,10 +51,11 @@
             5. Go to "Status Pages" in Uptime Kuma and create a new status page.
             6. Replace the 'src' attribute in the iframe below with the URL of your new Uptime Kuma status page.
           -->
-      <iframe src="https://status.odegardxd.com/status/mystatus" frameborder="0"
-        style="width: 100%; height: 800px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"
-        allowtransparency="true">
-      </iframe>
+      <div class="iframe-wrapper">
+        <iframe class="status-iframe" src="https://status.odegardxd.com/status/mystatus" frameborder="0"
+          allowtransparency="true">
+        </iframe>
+      </div>
     </div>
   </div>
 
