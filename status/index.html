@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Status of Ødegård's services.">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Status | Ødegård" />
+  <meta property="og:description" content="Check the status of my hosted services." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://odegardxd.github.io/status/" />
+  <!-- End Open Graph -->
+  <title>Status | Ødegård</title>
+  <link rel="stylesheet" href="../.assets/css/style.css">
+</head>
+
+<body>
+  <div class="background-container">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+  </div>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-brand">
+        <a href="../">Ødegård</a>
+      </div>
+      <div class="navbar-links">
+        <a href="../">Home</a>
+        <a href="../about/">About Me</a>
+        <a href="../socials/">Socials</a>
+        <a href="./" aria-current="page">Status</a>
+        <button id="theme-toggle" aria-label="Toggle dark/light mode">☀️</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-middle">
+    <h1>Service Status</h1>
+    <h2>Current uptime and status of my hosted services.</h2>
+
+    <div class="status-container" style="width: 100%; max-width: 800px; padding: 20px;">
+      <!-- 
+            Hi! To get your own Uptime Kuma status page showing here:
+            1. Go to your CasaOS dashboard.
+            2. Open the App Store and search for "Uptime Kuma".
+            3. Install it and open its dashboard.
+            4. Add your services (MySQL, Cloudflare, etc.) as monitors.
+            5. Go to "Status Pages" in Uptime Kuma and create a new status page.
+            6. Replace the 'src' attribute in the iframe below with the URL of your new Uptime Kuma status page.
+          -->
+      <iframe src="https://status.odegardxd.com/status/mystatus" frameborder="0"
+        style="width: 100%; height: 800px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"
+        allowtransparency="true">
+      </iframe>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Ødegård. Built with ❤️.</p>
+  </footer>
+
+  <button id="scrollToTopBtn" title="Go to top" aria-label="Go to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round" style="width: 24px; height: 24px; vertical-align: middle;">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  </button>
+
+  <script src="../.assets/js/main.js"></script>
+</body>
+
+</html>
